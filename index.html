@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GIT username checker</title>
+    <script src="js/utils.js" defer></script>
+    <script src="js/api.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<main>
+    <div id="main-header">
+        <h1>Github username searcher</h1>
+    </div>
+    <div class="container">
+        <div class="searching">
+            <form id="search-form">
+                <label for="search-bar">Search for a user:</label>
+                <input type="text" name="search" id="search-bar" placeholder="enter username" minlength="4">
+                <button type="submit" id="btn-search">Search</button>
+            </form>
+        </div>
+        <div class="informtion card">
+            <div class="user">
+                <h1 class="table">User</h1>
+
+                <div class="general info">
+                    <div class="profile-field avatar container">
+                        <img class="value" id="user_avatar" src="./gitPic.png" alt="github pic">
+                    </div>
+                    <div class="profile-row">
+                        <div class="profile-field">
+                            <span class="label">Username:</span>
+                            <span id="user_name" class="value">mc-ALoush</span>
+                        </div>
+
+                        <div class="profile-field">
+                            <span class="label">Bio:</span>
+                            <span id="user_bio" class="value">software engineer</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-row">
+                        <div class="profile-field">
+                            <span class="label">Followers:</span>
+                            <span id="user_followers" class="value">130</span>
+                        </div>
+
+                        <div class="profile-field">
+                            <span class="label">Following:</span>
+                            <span id="user_following" class="value">11</span>
+                        </div>
+                    </div>
+
+
+                    <div class="profile-field">
+                        <span class="label">Repositories:</span>
+                        <span id="user_repositories" class="value">23</span>
+                    </div>
+                    <div class="profile-row">
+                        <div class="profile-field">
+                            <span class="label">Location:</span>
+                            <span id="user_location" class="value">Aaramoun, beirut</span>
+                        </div>
+
+                        <div class="profile-field">
+                            <span class="label">Company:</span>
+                            <span id="user_company" class="value">Antonine University</span>
+                        </div>
+                    </div>
+
+
+                    <div class="profile-field">
+                        <span class="label">Profile Link:</span>
+                        <span id="user_profile_link" class="value">https://github.com</span>
+                    </div>
+                </div>
+            </div>
+            <section class="repo">
+                <h1 class="table">Repositories</h1>
+
+                <!-- Target ID for JS rendering; default fallback card provided for visual reference -->
+                <div class="repo_details" id="repos-container">
+                 <div class="item_">
+                    <div class="repo_row">
+                    <div class="repo_name">
+                        <a href="${repo.html_url}" target="_blank">githubSearcher</a>
+                    </div>
+                    <div class="repo_details_">
+                        <div class="info_ star">
+                            <i class="fa fa-star-o"></i> 30
+                        </div>
+                        <div class="info_ fork">
+                            <i class="fa fa-code-fork"></i> 50
+                        </div>
+                        <div class="info_ size">
+                            <i class="fa fa-file"></i> 10 KB
+                        </div>
+                    </div>
+               
+                  </div>
+                  <div class="repo_row">
+                    <div class="repo_name">
+                        <a href="${repo.html_url}" target="_blank">githubSearcher</a>
+                    </div>
+                    <div class="repo_details_">
+                        <div class="info_ star">
+                            <i class="fa fa-star-o"></i> 30
+                        </div>
+                        <div class="info_ fork">
+                            <i class="fa fa-code-fork"></i> 50
+                        </div>
+                        <div class="info_ size">
+                            <i class="fa fa-file"></i> 10 KB
+                        </div>
+                    </div>
+               
+                  </div>
+                </div>
+          
+                </div>
+            </section>
+        </div>
+
+
+
+    </div>
+
+</main>
+<footer>
+    <span>created by <a href="https://github.com/mc-AliRida" target="_blank">mc-AliRida</a></span>
+</footer>
+
+</html>
